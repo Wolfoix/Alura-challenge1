@@ -30,8 +30,8 @@ function desencriptar() {
 }
 
 function copy() {
-    var contenido = document.querySelector("#txtencriptado");
-    contenido.select();
+    var copiartxt = document.querySelector("#txtencriptado");
+    copiartxt.select();
     document.execCommand("copy", false,);
     alert("¡Hecho!");
 }
