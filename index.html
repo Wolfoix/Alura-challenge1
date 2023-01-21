@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="header">
+        <img class= "logoAlura" src="imagenes/LogoAlura.JPG" alt="logoAlura" ><h1>Encriptador de Texto</h1>
+    </div>
+    <div class="content">
+         <div class="contenedor">
+            <textarea class ="input-text" id = "usertxt" type="text" placeholder="Ingrese texto a aqui"></textarea>
+            <p>⚠Solo letras minusculas y sin acentos</p>
+             <button class="encriptar" id="btnencriptar" onclick="encriptar()">Encriptar</button>
+             <button class="desencriptar" id="btndesencriptar" onclick="desencriptar()">Desencriptar</button>
+         </div>
+         <div class="boxresult">
+              
+              <textarea class ="resultbox" id = "txtencriptado" type="text" placeholder="Texto encriptado/desencriptado"></textarea>
+             <button class="copiar" id="btncopiar" onclick="copy(); window.location.reload();"> Copiar </button>
+         </div>
+    </div>
+    <footer>
+        <img src="imagenes/Logo.png" class="logo">
+        <p class="copyright">&copy Copyright Encriptador Challenge Alura ONE - 2023</p>
+    </footer>
+
+    
+</body>
+</html>

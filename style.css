@@ -1,0 +1,291 @@
+.logoAlura{
+
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    
+}
+.header{
+    display: inline-flex;
+    width: 100%;
+}
+h1{
+    margin-left: 35%;
+    text-align: center;
+    font-size: 50px;
+    font-style: oblique;
+    font-weight: bold;
+    color:#673FD7;
+    text-shadow: 10px 10px 30px #673FD7;
+    
+}
+
+/*body{
+ background: linear-gradient(#d5def5, #8594e4);
+ font-family: 'Rubik', sans-serif;
+    
+}*/
+body{
+background-color: #e5e5f7;
+opacity: 0.8;
+background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #e5e5f7 10px ), repeating-linear-gradient( #444cf755, #444cf7 );
+}
+
+.content{
+    margin: auto;
+    width: 960px;
+    height: 650px;
+    padding: 5px;
+    
+}
+.contenedor{
+    float: left;
+    width: 70%;
+    height: 70%;
+    border-radius: 24px;
+}
+
+.boxresult{
+    float: right;
+    width: 30%;
+    height: auto;
+    border-radius: 24px;
+}
+
+.input-text{
+    width: 623px;
+    height: 139px;
+    margin-top: 30%;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 2em;
+    padding: 20px 20px;
+    border-style: outset;
+    background-color: lightskyblue;
+    box-shadow: 10px 10px 30px #673FD7;
+
+}
+.contenedor ::placeholder{
+    text-align: center;
+    padding-top: 30px;
+}
+.contenedor p {
+    color:#150542;
+    font-weight: bold;
+}
+::placeholder{
+    color: #673FD7;
+}
+
+/*.encriptar,.desencriptar{
+    margin-top: 25px;
+    margin-left: 70px;
+    font-size: 2em;
+    font-weight: bold;
+    border-radius: 3px;
+    border: none;
+    color: white;
+    background-color: blue;
+    transition: 1s all;
+    cursor: pointer;   
+}*/
+
+.encriptar, .desencriptar{
+  margin-left: 100px;  
+  margin-top: 40px;
+  background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  flex-shrink: 0;
+  font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  height: 4rem;
+  padding: 0 1.6rem;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+  transition: all .5s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.encriptar:hover, .desencriptar:hover {
+  box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
+  transform: scale(1.1);
+}
+
+
+
+.copiar{
+  margin-left: 60%;  
+  margin-top: 40px;
+  background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  flex-shrink: 0;
+  font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  height: 4rem;
+  padding: 0 1.6rem;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+  transition: all .5s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.copiar:hover{
+    box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
+    transform: scale(1.2);
+}
+/*.encriptar:hover, .desencriptar:hover{
+    background-color: darkorange;
+    transform: scale(1.2);
+    
+}*/
+
+.resultbox{
+    height: 587px;
+    width: 417px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 2em;
+    padding: 20px 20px;
+    border-style: outset;
+    background-color: lightskyblue;
+    box-shadow: 10px 10px 30px #673FD7;
+    
+}
+
+
+
+footer{
+    height: 150px;
+    width: 100%;
+    text-align: center;
+    margin-top: 70px;
+    color:#270c72 ;
+    font-weight: bold;
+
+}
+
+.logo{
+    width: 50px;
+    height: 75px;
+}
+
+/* CSS responsive*/
+
+@media screen and (max-width: 415px) {
+    .header h1{
+        display: none;
+    }
+    body{
+        width: auto;
+        height: auto;
+        background-repeat: no-repeat;
+    }
+    .input-text{
+    height: 147px;
+    width: auto;
+    margin-top: 30px;
+    }
+    .boxresult{
+    float: none;
+    margin: 0px;
+    
+    }
+    .resultbox{
+    height: 147px;
+    width: auto;
+    margin-top: -100px;
+    }
+    .copiar{
+        margin-left: 40%;
+    }
+    .contenedor p{
+        margin-left: 40px;
+    }
+    .encriptar, .desencriptar{
+        margin-top: 15px;
+        margin-left: 30px;
+    }
+    .content{
+        display:auto;
+        
+    }
+    .logo{
+        display: none;
+    }
+    footer{
+        margin-top: -10px;
+        margin-left: -10px;
+    }
+  }
+
+  @media screen and (max-width: 912px){
+    .logoAlura{
+        width: 50px;
+        height: 50px;
+    }
+    h1{
+        margin: 0 0;
+        font-size: 40px;
+        margin-top: 40px;
+    }
+    body{
+        width: auto;
+        height: auto;
+        background-repeat: no-repeat;
+        
+    }
+    
+    .input-text{
+        margin: 10px 10px;
+        height: 219px;
+        width: 388px;
+    }
+    .contenedor p {
+        margin: 0 15px;
+    }
+    .encriptar, .desencriptar{
+        margin: 10px 40px;
+    }
+
+    .boxresult{
+        float: none;
+        margin-top: 100px;
+        width: auto;
+        height: auto;
+        display: flex;
+        
+        
+    }
+
+    .resultbox{
+        margin-left: -660px;
+        margin-top:250px;
+        width: 389px;
+        height: 125px;
+    }
+    .copiar{
+        margin-top: 380px;
+        margin-left: -88%;  
+    }
+    footer{
+        width: 415px;
+        margin-top: 35px;
+    }
+    
+
+  }
+
